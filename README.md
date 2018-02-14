@@ -1,4 +1,6 @@
 # DumpTomcatSessions
+A simple command line utility to dump tomcat sessions leveraging the `Tomcat type=${MANAGER}, context=${context.name}, host=${host.name}, service=${service.name}` Mbean for fun or profit.
+
 
 ```
 Usage: java DumpTomcatSessions server port [user password]
