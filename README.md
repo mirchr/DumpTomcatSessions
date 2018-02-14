@@ -1,5 +1,5 @@
 # DumpTomcatSessions
-A simple command line utility to dump tomcat sessions leveraging the `Tomcat type=${MANAGER}, context=${context.name}, host=${host.name}, service=${service.name}` Mbean for fun or profit.
+A simple command line utility to dump tomcat sessions using [JMX](https://tomcat.apache.org/tomcat-8.0-doc/monitoring.html#Enabling_JMX_Remote) for fun or profit.
 
 
 ```
