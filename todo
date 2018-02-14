@@ -1,0 +1,6 @@
+Test with Tomcat 9
+Test with Tomcat 8
+Test with Tomcat 7 (latest version)
+add option to remove headers to make the output parse friendly
+add option to filter by context
+add support for long options?
