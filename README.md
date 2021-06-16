@@ -1,5 +1,5 @@
 # DumpTomcatSessions
-A simple command line utility to dump tomcat sessions using [JMX](https://tomcat.apache.org/tomcat-8.0-doc/monitoring.html#Enabling_JMX_Remote) for fun or profit.
+A simple command line utility to dump Tomcat sessions using [JMX](https://tomcat.apache.org/tomcat-8.0-doc/monitoring.html#Enabling_JMX_Remote) for fun or profit.
 
 
 ```
