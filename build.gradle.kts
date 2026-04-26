@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "com.mirchr"
-version = providers.gradleProperty("version").getOrElse("0.0.0-SNAPSHOT")
+version = providers.gradleProperty("version").getOrElse("SNAPSHOT")
 
 val jdkVersion = providers.gradleProperty("jdkVersion").getOrElse("25").toInt()
 
