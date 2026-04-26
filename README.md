@@ -1,6 +1,8 @@
 # DumpTomcatSessions
 
-[![CI](https://github.com/mirchr/DumpTomcatSessions/actions/workflows/ci.yml/badge.svg)](https://github.com/mirchr/DumpTomcatSessions/actions/workflows/ci.yml)
+[![CI](https://github.com/mirchr/DumpTomcatSessions/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/mirchr/DumpTomcatSessions/actions/workflows/ci.yml)
+[![Release](https://github.com/mirchr/DumpTomcatSessions/actions/workflows/release.yml/badge.svg)](https://github.com/mirchr/DumpTomcatSessions/actions/workflows/release.yml)
+[![Latest release](https://img.shields.io/github/v/release/mirchr/DumpTomcatSessions?sort=semver&display_name=tag)](https://github.com/mirchr/DumpTomcatSessions/releases/latest)
 
 A simple command line utility to dump Tomcat sessions using [JMX](https://tomcat.apache.org/tomcat-8.0-doc/monitoring.html#Enabling_JMX_Remote) for fun or profit.
 
@@ -37,19 +39,25 @@ Catalina:type=Manager,context=/sample,host=localhost total sessions = 3
 
 ## Building from source
 
-Requires a JDK between 21 and 25. Gradle's toolchain auto-provisions the
-requested JDK via [Foojay](https://foojay.io/) if you don't have it installed.
+Requires:
+- **Gradle 9.4+** (CI is pinned to 9.4.1)
+- A JDK between 21 and 25 — only one is needed; Gradle's toolchain
+  auto-provisions any other JDK you build against, via [Foojay](https://foojay.io/).
+
+Install Gradle locally with Homebrew (`brew install gradle`) or
+[sdkman](https://sdkman.io/) (`sdk install gradle 9.4.1`). The wrapper jar is
+intentionally not committed.
 
 Build for the default JDK (25):
 
 ```
-./gradlew build
+gradle build
 ```
 
 Build against a specific JDK:
 
 ```
-./gradlew build -PjdkVersion=21
+gradle build -PjdkVersion=21
 ```
 
 The runnable jar is written to `build/libs/DumpTomcatSessions-<version>-jdk<N>.jar`.

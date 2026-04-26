@@ -21,10 +21,12 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
-# Gradle
+# Gradle (wrapper is intentionally not committed; install Gradle locally instead)
 .gradle/
 build/
-!gradle/wrapper/gradle-wrapper.jar
+gradle/
+gradlew
+gradlew.bat
 
 # IDE
 .idea/

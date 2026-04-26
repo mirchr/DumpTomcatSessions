@@ -25,11 +25,10 @@ jobs:
           distribution: temurin
           java-version: ${{ matrix.jdk }}
 
-      - name: Validate Gradle wrapper
-        uses: gradle/actions/wrapper-validation@v4
-
       - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '9.4.1'
 
       - name: Build and test
-        run: ./gradlew --no-daemon build -PjdkVersion=${{ matrix.jdk }}
+        run: gradle --no-daemon build -PjdkVersion=${{ matrix.jdk }}
