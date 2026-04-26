@@ -60,7 +60,7 @@ Build against a specific JDK:
 gradle build -PjdkVersion=21
 ```
 
-The runnable jar is written to `build/libs/DumpTomcatSessions-<version>-jdk<N>.jar`.
+The runnable jar is written to `build/libs/DumpTomcatSessions-SNAPSHOT-jdk<N>.jar`.
 
 ## Releasing
 
